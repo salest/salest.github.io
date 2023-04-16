@@ -600,8 +600,22 @@ progress {
 }
 
 .img-fluid {
+  width: 100%;
+  height: 200px;
   max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.img-timeline {
   height: auto;
+  max-width: 100%;
+}
+
+.img-portfolio{
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .img-thumbnail {
@@ -3240,8 +3254,8 @@ textarea.form-control-lg {
 }
 
 .btn-dark {
-  color: #fff;
-  background-color: #212529;
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
   border-color: #212529;
 }
 .btn-dark:hover {
@@ -7844,6 +7858,7 @@ textarea.form-control-lg {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  color: var(--bs-light);
 }
 
 .bg-black {
@@ -11351,7 +11366,7 @@ p {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #ffc800;
+  color: #fff;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   letter-spacing: 0.0625em;
@@ -11409,8 +11424,8 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #000;
-  background-image: url("../assets/img/pascal-debrunner-Yew4M5kCE6U-unsplash.jpg");
+  color: #fff;
+  background-image: url("../assets/img/jeremy-bishop-turtle.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11481,6 +11496,7 @@ header.masthead .masthead-heading {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
+  color: var(--bs-dark);
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
